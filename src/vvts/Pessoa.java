@@ -66,11 +66,11 @@ public class Pessoa {
             if(imc < 20.7)//11
                 resultado = "Abaixo do peso";//12
             else if(imc < 26.4)//13
-                resultado = "Peso norma l.";//14
+                resultado = "Peso normal";//14
             else if(imc < 27.8)//15
-                resultado = "Marginalmente acima do peso.";//16
+                resultado = "Marginalmente acima do peso";//16
             else if(imc < 31.1)//17
-                resultado = "Acima do peso.";//18
+                resultado = "Acima do peso";//18
             else 
                 resultado = "Obeso";//19
         }

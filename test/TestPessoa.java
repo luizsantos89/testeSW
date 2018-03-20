@@ -14,71 +14,71 @@ public class TestPessoa extends TestCase {
 
     public void testImc_FemAbaixoPeso(){
         pessoa.setSexo("feminino");
-        pessoa.setPeso(75.0);
-        pessoa.setAltura(1.99);
+        pessoa.setPeso(19.0);
+        pessoa.setAltura(1.0);
         assertEquals("Abaixo do peso", pessoa.calculaIMC());
     }
 
     public void testImc_FemPesoNormal(){
         pessoa.setSexo("feminino");
-        pessoa.setPeso(75.0);
-        pessoa.setAltura(1.71);
+        pessoa.setPeso(25.7);
+        pessoa.setAltura(1.0);
         assertEquals("Peso normal", pessoa.calculaIMC());
     }
 
     public void testImc_FemMargAcimaPeso(){
         pessoa.setSexo("feminino");
-        pessoa.setPeso(75.0);
-        pessoa.setAltura(1.66);
+        pessoa.setPeso(27.2);
+        pessoa.setAltura(1.0);
         assertEquals("Marginalmente acima do peso", pessoa.calculaIMC());
     }
 
     public void testImc_FemAcimaPeso(){
         pessoa.setSexo("feminino");
-        pessoa.setPeso(75.0);
-        pessoa.setAltura(1.53);
+        pessoa.setPeso(32.2);
+        pessoa.setAltura(1.0);
         assertEquals("Acima do peso", pessoa.calculaIMC());
     }
 
     public void testImc_FemObeso(){
         pessoa.setSexo("feminino");
-        pessoa.setPeso(75.0);
-        pessoa.setAltura(1.52);
+        pessoa.setPeso(32.3);
+        pessoa.setAltura(1.0);
         assertEquals("Obeso", pessoa.calculaIMC());
     }
 
     public void testImc_MascAbaixoPeso(){
         pessoa.setSexo("masculino");
-        pessoa.setPeso(75.0);
-        pessoa.setAltura(1.91);
+        pessoa.setPeso(20.6);
+        pessoa.setAltura(1.0);
         assertEquals("Abaixo do peso", pessoa.calculaIMC());
     }
 
     public void testImc_MascPesoNormal(){
         pessoa.setSexo("masculino");
-        pessoa.setPeso(75.0);
-        pessoa.setAltura(1.69);
+        pessoa.setPeso(26.3);
+        pessoa.setAltura(1.0);
         assertEquals("Peso normal", pessoa.calculaIMC());
     }
 
     public void testImc_MascMargAcimaPeso(){
         pessoa.setSexo("masculino");
-        pessoa.setPeso(75.0);
-        pessoa.setAltura(1.63);
+        pessoa.setPeso(27.7);
+        pessoa.setAltura(1.0);
         assertEquals("Marginalmente acima do peso", pessoa.calculaIMC());
     }
 
     public void testImc_MascAcimaPeso(){
         pessoa.setSexo("masculino");
-        pessoa.setPeso(75.0);
-        pessoa.setAltura(1.56);
+        pessoa.setPeso(31.0);
+        pessoa.setAltura(1.0);
         assertEquals("Acima do peso", pessoa.calculaIMC());
     }
 
     public void testImc_MascObeso(){
         pessoa.setSexo("masculino");
-        pessoa.setPeso(75.0);
-        pessoa.setAltura(1.55);
+        pessoa.setPeso(31.1);
+        pessoa.setAltura(1.0);
         assertEquals("Obeso", pessoa.calculaIMC());
     }
 }
